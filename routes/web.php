@@ -57,4 +57,5 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], fu
 
     //Theme Settings
     Route::get('theme/setting', [ThemeSettingController::class, 'themesetting'])->name('theme.setting');
+    Route::get('theme/setting', [ThemeSettingController::class, 'themesetting'])->name('theme.setting');
 });

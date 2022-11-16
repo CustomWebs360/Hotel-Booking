@@ -33,8 +33,9 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('new_url', function(){
-    return "git foulk";
+
+Route::get('tanvir', function(){
+    return 'Hi Tanvir!';
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function(){

@@ -34,7 +34,7 @@ Route::middleware([
 });
 
 Route::get('test-url', function(){
-    echo 'hello ""';
+    echo 'hello bangladesh ""';
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function(){

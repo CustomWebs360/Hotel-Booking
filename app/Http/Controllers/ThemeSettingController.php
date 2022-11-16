@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class ThemeSettingController extends Controller
 {
-    public function themeBacgroundsetting(Request $request)
+    public function themesetting(Request $request)
     {
        DB::table('theme_settings')->where('setting_name', 'themeBackgroud')->update([
             'setting_value' => $request->value,

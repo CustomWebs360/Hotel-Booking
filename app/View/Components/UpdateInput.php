@@ -18,7 +18,8 @@ class UpdateInput extends Component
     public $class = '';
     public $id = '';
     public $col = '';
-    public function __construct($type, $name, $label, $class = null, $value = null, $id = null, $col=null)
+    public $required = '';
+    public function __construct($type, $name, $label, $class = null, $value = null, $id = null, $col = null, $required = null)
     {
         $this->type = $type;
         $this->name = $name;
@@ -27,6 +28,7 @@ class UpdateInput extends Component
         $this->class = $class;
         $this->id = $id;
         $this->col = $col;
+        $this->required = $required;
     }
 
 

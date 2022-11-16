@@ -4,7 +4,7 @@
 <div class="col-{{$col}}">
 @endif
     <div class="form-group">
-        <label for="first-name-column">{{$label}}</label>
+        <label for="first-name-column">{{$label}} <small class="text-danger">{{$required}}</small></label>
 
         @if($id == null )
             @if ($value == null)

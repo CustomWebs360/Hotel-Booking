@@ -16,12 +16,16 @@ class image extends Component
     public $label = '';
     public $class = '';
     public $col = '';
-    public function __construct($name, $label, $class= null, $col = null)
+    public $required = '';
+    public $width = '';
+    public function __construct($name, $label, $class= null, $col = null, $required=null, $width=null)
     {
         $this->name = $name;
         $this->label = $label;
         $this->class = $class;
         $this->col = $col;
+        $this->required = $required;
+        $this->width = $width;
     }
 
     /**

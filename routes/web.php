@@ -33,8 +33,8 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('test-url', function(){
-    return "hello jahin";
+Route::get('new_url', function(){
+    return "git foulk";
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function(){

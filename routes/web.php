@@ -38,6 +38,11 @@ Route::get('new-test', function(){
     return 'my test';
 });
 
+
+Route::get('test-url', function(){
+    echo 'hello bangladesh ""';
+});
+
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function(){
     //Contact
     Route::resource('contact', ContactController::class);

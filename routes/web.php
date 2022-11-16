@@ -56,5 +56,5 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], fu
     Route::post('general-settings/update/{id}', [GeneralSettingController::class, 'index_update'])->name('general.setting.update');
 
     //Theme Settings
-    Route::get('theme/setting', [ThemeSettingController::class, 'themeBacgroundsetting'])->name('theme.setting');
+    Route::get('theme/setting', [ThemeSettingController::class, 'themesetting'])->name('theme.setting');
 });

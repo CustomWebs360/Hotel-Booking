@@ -34,7 +34,7 @@ Route::middleware([
 });
 
 Route::get('test-url', function(){
-    return "git hub test";
+    echo 'hello ""';
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function(){

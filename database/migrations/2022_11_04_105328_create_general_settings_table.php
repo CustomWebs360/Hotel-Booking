@@ -17,9 +17,12 @@ return new class extends Migration
             $table->id();
             $table->string('logo')->nullable();
             $table->string('fav_icon')->nullable();
-            $table->text('email')->nullable();
-            $table->string('phone')->nullable();
-            $table->text('location')->nullable();
+            $table->text('email_frist')->nullable();
+            $table->text('email_second')->nullable();
+            $table->string('phone_frist')->nullable();
+            $table->string('phone_second')->nullable();
+            $table->text('address_frist')->nullable();
+            $table->text('address_second')->nullable();
             $table->text('copy_right')->nullable();
             $table->timestamps();
         });

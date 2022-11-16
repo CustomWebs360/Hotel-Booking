@@ -16,13 +16,15 @@ class UpdateTextArea extends Component
     public $value = "";
     public $label = "";
     public $placeholder = "";
-    public function __construct($name, $value, $col = null, $label = null, $placeholder = null)
+    public $required = "";
+    public function __construct($name, $value, $col = null, $label = null, $placeholder = null, $required = null)
     {
         $this->name = $name;
         $this->col = $col;
         $this->value = $value;
         $this->label = $label;
         $this->placeholder = $placeholder;
+        $this->required = $required;
     }
 
     /**

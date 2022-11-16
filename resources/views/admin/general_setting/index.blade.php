@@ -16,7 +16,7 @@
                                     <a href="{{ route('admin.dashboard') }}">Home</a>
                                 </li>
                                 <li class="breadcrumb-item active">
-                                    Contact
+                                    General Setting
                                 </li>
                             </ol>
                         </div>
@@ -35,20 +35,21 @@
                         <form action="{{route('admin.general.setting.update', $setting->id)}}" method="post">
                         @csrf
                             <div class="row align-items-md-center mb-2">
+                                <x-image type="file" name="logo" label="Logo" required="*"/>
 
-                                <x-update-input type="email" name="email" label="Email" value="{{$setting->email}}"/>
-                                <x-input type="email" name="email" placeholder="Enner" value="email"  label="email" />
-                                <x-input type="text" name="frist_name" placeholder="Enner"  label="email" />
-                                <x-input type="text" name="frist_name" placeholder="Enner"  label="email" />
-                                <x-image  name='logo' label="Upload Favicon"/>
+                                <x-image type="file" name="logo" label="Fav Icon" required="*"/>
 
-                                {{-- <x-text-area name="logn_text"/> --}}
-                                <x-text-area name="logn_text" value="logn_text" label="Long Text" placeholder="Write Placeholder..."/>
-                                <x-update-text-area name="logn_text" value="{{$setting->email}}" label="Update Text Area" placeholder="Write Placeholder..."/>
+                                <x-update-input type="email" name='email' value="{{$setting->email_frist}}" label="Email" required="*"/>
+                                <x-update-input type="email" name='email' value="{{$setting->email_second}}" label="Email" required="(Optional)"/>
 
-                                <x-form-submit/>
-                                </div>
-                            </form>
+                                <x-update-input type="tel" name='phone_frist' value="{{$setting->phone_frist}}" label="Phone" required="*"/>
+                                <x-update-input type="tel" name='phone_second' value="{{$setting->phone_second}}" label="Phone" required="(Optional)"/>
+
+                                <x-update-text-area name="address-frist" value="{{$setting->address_frist}}" label="Address" required="*"/>
+                                <x-update-text-area name="address-second" value="{{$setting->address_second}}" label="Address" required="(Optional)"/>
+
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

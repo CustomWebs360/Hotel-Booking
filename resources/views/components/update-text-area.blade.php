@@ -4,7 +4,7 @@
 <div class="col-{{$col}}">
 @endif
     <div class="form-group">
-        <label for="exampleFormControlTextarea1">{{$label}}</label>
-        <textarea name={{$name}} class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="{{$placeholder}}">{{$value}}</textarea>
+        <label for="exampleFormControlTextarea1">{{$label}} <small class="text-danger">{{$required}}</small></label>
+        <textarea name={{$name}} class="form-control"   placeholder="{{$placeholder}}">{{$value}}</textarea>
     </div>
 </div>

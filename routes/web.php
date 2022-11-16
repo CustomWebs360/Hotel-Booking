@@ -35,7 +35,7 @@ Route::middleware([
 
 
 Route::get('new-test', function(){
-    return 'git hub test';
+    return 'my test';
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function(){

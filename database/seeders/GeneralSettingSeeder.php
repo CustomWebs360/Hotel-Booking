@@ -25,7 +25,7 @@ class GeneralSettingSeeder extends Seeder
         $setting->address_second    = 'Feni, Bangladesh';
         $setting->phone_frist       = '01879285037';
         $setting->phone_second      = '01646004800';
-        $setting->copy_right        = 'All right reserved by Tanvir';
+        $setting->copy_right        = '<p><span style="background-color: rgb(248, 248, 248);">COPYRIGHT © 2020 </span><a href="www.customwebs.com" target="_blank" style="background-color: rgb(248, 248, 248);">CustomWebs360</a><span style="background-color: rgb(248, 248, 248);">, All rights Reserved</span></p>';
 
         $setting->save();
     }

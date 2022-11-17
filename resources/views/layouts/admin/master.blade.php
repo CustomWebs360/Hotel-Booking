@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loaded {{isset(theme_setting()->setting_value) ? theme_setting()->setting_value : 'light-layout'}}" lang="en" data-textdirection="ltr">
+<html class="loaded" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
 <head>
@@ -54,8 +54,7 @@
 
 
     @include('layouts.admin.partial.js')
-    {!! Toastr::message() !!}
-    @include('sweetalert::alert')
+
 </body>
 <!-- END: Body-->
 

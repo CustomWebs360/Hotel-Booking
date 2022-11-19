@@ -22,6 +22,7 @@
         @endif
 
         <x-alert alert="{{$name}}" />
+        
     </div>
 </div>
 

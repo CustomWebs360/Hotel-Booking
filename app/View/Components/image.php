@@ -18,7 +18,8 @@ class image extends Component
     public $col = '';
     public $required = '';
     public $width = '';
-    public function __construct($name, $label, $class= null, $col = null, $required=null, $width=null)
+    public $src = '';
+    public function __construct($name, $label, $class = null, $col = null, $required = null, $width = null, $src = null)
     {
         $this->name = $name;
         $this->label = $label;
@@ -26,6 +27,7 @@ class image extends Component
         $this->col = $col;
         $this->required = $required;
         $this->width = $width;
+        $this->src = $src;
     }
 
     /**

@@ -7,10 +7,8 @@
  <link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/app-assets/vendors/css/vendors.min.css">
  <link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/app-assets/vendors/css/charts/apexcharts.css">
  <link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/app-assets/vendors/css/extensions/toastr.min.css">
- <link rel="stylesheet" type="text/css"
-     href="{{ asset('admin') }}/app-assets/vendors/css/pickers/pickadate/pickadate.css">
- <link rel="stylesheet" type="text/css"
-     href="{{ asset('admin') }}/app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+ <link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/app-assets/vendors/css/pickers/pickadate/pickadate.css">
+ <link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
  <!-- END: Vendor CSS-->
 
 
@@ -27,8 +25,8 @@
  <!-- BEGIN: Page CSS-->
  <link rel="stylesheet" type="text/css"
      href="{{ asset('admin') }}/app-assets/css/core/menu/menu-types/vertical-menu.css">
- {{-- <link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/app-assets/css/plugins/extensions/ext-component-toastr.css"> --}}
- <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
+ <link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/app-assets/css/plugins/extensions/ext-component-toastr.css">
+ {{-- <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css"> --}}
  <!-- END: Page CSS-->
 
  @yield('styles')

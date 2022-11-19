@@ -12,8 +12,8 @@
    <!-- END: Page JS-->
 
    <!-- BEGIN: Page Vendor JS-->
-   {{-- <script src="{{asset('admin')}}/app-assets/vendors/js/extensions/toastr.min.js"></script> --}}
-   <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+   <script src="{{asset('admin')}}/app-assets/vendors/js/extensions/toastr.min.js"></script>
+   {{-- <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script> --}}
    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <!-- END: Page Vendor JS-->
 
@@ -75,5 +75,27 @@
            });
 
 
+
        });
    </script>
+
+    @if(session()->get('success'))
+        <script>
+            toastr.success(' ','{{ session()->get('success') }}');
+        </script>
+    @endif
+
+    @if(session()->get('error'))
+        <script>
+            toastr.error(' ','{{ session()->get('error') }}');
+        </script>
+    @endif
+
+    @if ($errors->any())
+        @foreach ($errors->all() as $error)
+            <script>
+                toastr.error('{{ $error }}');
+            </script>
+        @endforeach
+    @endif
+

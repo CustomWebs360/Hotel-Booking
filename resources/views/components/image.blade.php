@@ -13,6 +13,8 @@
 
     </div>
 </div>
-<div class="col-md-12 mb-1">
-   <img width="{{$width}}" src="{{asset('uploads/generalsetting/logo.png')}}" alt="logo">
-</div>
+@if ($src != null)
+    <div class="col-md-12 mb-1">
+    <img width="{{$width}}" src="{{$src}}" alt="image not found">
+    </div>
+@endif
